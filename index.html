@@ -109,24 +109,6 @@
 
 .prev-btn { left: 10px; }
 .next-btn { right: 10px; }
-
-@media (max-width: 576px) {
-  .nav-btn {
-    font-size: 1.5rem;
-    width: 35px;
-    height: 35px;
-  }
-  .btn-close-custom {
-    font-size: 1.5rem;
-    width: 35px;
-    height: 35px;
-  }
-  section.parallax {
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-  }
-}
  /* batas */
 
     /* Front overlay (initial invitation) */
@@ -185,24 +167,6 @@
         object-fit: cover;
       }
 
-      @media (max-width: 768px) {
-        .round-card {
-          width: 140px;
-          height: 140px;
-        }
-        .glass-card h2 {
-          font-size: 1.8rem;
-        }
-          .glass-card-overlay {
-            top: 200px;
-          }
-        section.parallax {
-          background-attachment: scroll;
-          background-position: center center;
-          background-size: cover;
-        }
-      }
-
     /* First section card for fading gallery */
     .hero-card { position: relative; width: 420px; height: 420px; overflow: hidden; }
     .hero-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
@@ -251,7 +215,7 @@
         margin-left: 4px;
     }
 
-    footer { padding: 24px 0; text-align: center; }
+footer { padding: 24px 0; text-align: center; }
 
 /* MESSAGE BOX SCROLLING */
 .messages-box::-webkit-scrollbar {
@@ -297,6 +261,21 @@
 
     /* Responsive tweaks */
     @media (max-width:768px) {
+        .round-card {
+          width: 140px;
+          height: 140px;
+        }
+        .glass-card h2 {
+          font-size: 1.8rem;
+        }
+          .glass-card-overlay {
+            top: 200px;
+          }
+        section.parallax {
+          background-attachment: scroll;
+          background-position: center center;
+          background-size: cover;
+        }
       .hero-card { width: 300px; height: 300px; }
       .round-card { width: 120px; height: 120px; }
         section.parallax {
@@ -343,6 +322,21 @@
 }
 
 @media (max-width: 576px) {
+  .nav-btn {
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
+  }
+  .btn-close-custom {
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
+  }
+  section.parallax {
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
   .music-btn {
     width: 45px;
     height: 45px;
