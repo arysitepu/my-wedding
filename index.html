@@ -273,6 +273,26 @@
     background: rgba(255, 255, 255, 0.25);
 }
 
+#frontOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/bg/wed-1.jpg'); /* <-- gambar kamu di sini */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+#frontOverlay.hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* BATAS */
 
     /* Responsive tweaks */
@@ -284,6 +304,18 @@
           background-position: center center;
           background-size: cover;
         }
+
+    #frontOverlay {
+        background-attachment: scroll; /* hilangkan efek fixed di mobile */
+        background-size: contain;      /* agar gambar tidak kepotong */
+        background-position: center top;
+        background-color: #000;        /* fallback */
+      }
+
+      #frontCard {
+        width: 90%;
+        padding: 1.5rem;
+      }
     }
     /* musik */
       .music-btn {
@@ -353,6 +385,17 @@
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
+  }
+  #frontOverlay {
+    background-attachment: scroll; /* hilangkan efek fixed di mobile */
+    background-size: contain;      /* agar gambar tidak kepotong */
+    background-position: center top;
+    background-color: #000;        /* fallback */
+  }
+
+  #frontCard {
+    width: 90%;
+    padding: 1.5rem;
   }
 }
 /* batas */
